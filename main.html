@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEI Web Development | Frontend Intro</title>
+    <script src="script.js"></script>
+</head>
+
+<body onload="initiliazeElements()">
+    
+    <!-- Syntax for creating an 'a' element; is commonly used to provide links to websites without needing to code it ourselves -->
+    <a href="https://www.fcps.edu/">
+        Link
+    </a>
+
+    <!-- Syntax for creating a button element; can be used for a variety of things (that we will demonstrate) -->
+    <button> button </button>
+
+
+    <!-- Both the "id" and "class" attribute are used to identify a certain HTML element for CSS and JS. 
+        The same "class" attribute value can be used for many elements, but "id" aatributes must have different values for all HTML elements -->
+    <div id="first-div">
+        Div is basically like a subdivision/chunk of HTML elements
+    </div>
+
+
+    <!-- In this button, we see that we add the "onclick" attribute which has the value of "callButton2()".
+        This means that when the user clicks this element, it will call the "callButton2" function we declared in "script.js" -->
+    <button id="unique-button" onclick="callButton2()"> 
+        Unique Button
+    </button>
+
+
+    <button class="button-class" >
+        Button Class
+    </button>
+
+    <button class="button-class">
+        Button Class
+    </button>
+
+    <br><br>
+
+    <!-- Form element is useful for moments when you need to retrieve user data. 
+        It is commonly used for user login features; Data passed through a form can easily be sent and handled -->
+    <form>
+        <input type="text" id="email" class = "input-field" name="email" placeholder="Email"><br>
+        <input type = "password" id="password" class="input-field" name = "password" placeholder="Password"><br>
+        <button class="submit-button"> Submit </button>
+    </form>
+
+    
+</body>
+</html>
